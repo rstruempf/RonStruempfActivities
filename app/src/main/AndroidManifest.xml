@@ -27,6 +27,15 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.ronstruempf.ronstruempfactivities.MainActivity" />
         </activity>
+        <activity
+            android:name=".DisplaySecondMessageActivity"
+            android:label="@string/title_activity_display_second_message"
+            android:parentActivityName=".DisplayMessageActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.ronstruempf.ronstruempfactivities.DisplayMessageActivity" />
+        </activity>
     </application>
 
 </manifest>

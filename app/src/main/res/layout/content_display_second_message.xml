@@ -9,37 +9,28 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="com.ronstruempf.ronstruempfactivities.DisplayMessageActivity"
-    tools:showIn="@layout/activity_display_message"
-    android:id="@+id/content">
+    tools:context="com.ronstruempf.ronstruempfactivities.DisplaySecondMessageActivity"
+    tools:showIn="@layout/activity_display_second_message">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:id="@+id/displayMessage"
+        android:id="@+id/displayFirstMessage"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="42dp"
-        android:minWidth="300dp"
-        android:hint="First message" />
-
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/editSecondMessage"
-        android:layout_below="@+id/displayMessage"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="49dp"
-        android:hint="Enter second message"
+        android:layout_marginTop="52dp"
+        android:hint="First Message"
         android:minWidth="300dp" />
 
-    <Button
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Next"
-        android:id="@+id/buttonNext"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true"
-        android:onClick="sendMessages" />
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/displaySecondMessage"
+        android:layout_marginTop="63dp"
+        android:hint="Second Message"
+        android:minWidth="300dp"
+        android:layout_below="@+id/displayFirstMessage"
+        android:layout_centerHorizontal="true" />
 </RelativeLayout>
